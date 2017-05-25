@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>使用此窗体提交搜索请求：</p>
+<tr><td>英雄：</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>装备：</td><td><input name='letters' type='TEXT' value='aeiou'></td></tr>
+<tr><td>英雄故事：</td><td><input name='letters' type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>准备就绪后, 单击此按钮：</p>
+<p><input value='准备战斗！' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
